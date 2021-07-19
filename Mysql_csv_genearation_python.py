@@ -15,7 +15,7 @@ port="3306"
 ip="127.0.0.1"
 script="\"select * from information_schema.tables;\""
 
-cmd="mysql "+" -h "+ ip +" -u " + user+ " -p"+psw+" nfr_ship "+ " -e"+script
+cmd="mysql "+" -h "+ ip +" -u " + user+ " -p"+psw+" information_schema "+ " -e"+script
 
 s1_file="D://Task//Deployment_status//replica_ws_s1//"+timestr+".txt"
 s1_file_out="D://Task//Deployment_status//replica_ws_s1//release.csv"
