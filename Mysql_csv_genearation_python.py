@@ -10,10 +10,10 @@ import xlsxwriter
 import subprocess
 
 user="Read"
-psw="\"R#@d123\""
+psw="\"P@ssw0rd\""
 port="3306"
-ip="70.207.7.20"
-script="\"select @@hostname as 'server name', mdlname, rlsno, rlsdate, insdate, type from nfr_ship.releasedetails where insdate > DATE_SUB(getdate(), INTERVAL 8 DAY);\""
+ip="127.0.0.1"
+script="\"select * from information_schema.tables;\""
 
 cmd="mysql "+" -h "+ ip +" -u " + user+ " -p"+psw+" nfr_ship "+ " -e"+script
 
